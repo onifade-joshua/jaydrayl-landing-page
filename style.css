@@ -1,0 +1,309 @@
+    * {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        color: #444;
+        border-top: 10px solid aqua;
+        position: relative;
+        scroll-behavior: smooth;
+    }
+    
+    .container {
+        width: 1200px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2em 1em;
+    }
+    
+    a:link {
+        color: aqua;
+        text-decoration: none;
+    }
+    
+    a:visited {
+        color: aqua;
+    }
+    
+    a:hover {
+        color: lightblue;
+        font-weight: 600;
+        text-decoration: underline solid lightblue;
+    }
+    
+    a:active {
+        background-color: black;
+        font-style: italic;
+    }
+    
+    nav {
+        font-size: 18px;
+    }
+    
+    article {
+        margin-bottom: 60px;
+        /* width: 825px; */
+    }
+    
+    aside {
+        background-color: #f7f7f78c;
+        border-top: 5px solid aqua;
+        border-bottom: 5px solid aqua;
+        padding: 50px 40px;
+        /* width: 500px; */
+    }
+    
+    .main-header {
+        background-color: #f7f7f78c;
+        padding: 20px 40px;
+        margin-bottom: 60px;
+        /* height: 80px; */
+    }
+    
+    .post-header {
+        margin-bottom: 40px;
+    }
+    
+    li {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+    
+    ul,
+    ol {
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+    
+    li:last-child {
+        margin-bottom: 0;
+    }
+    
+    h1 {
+        font-weight: 600;
+        color: aqua;
+        text-transform: uppercase;
+        font-size: 25px;
+    }
+    
+    h1::first-letter {
+        font-style: normal;
+        margin-right: 6px;
+    }
+    
+    h2 {
+        color: aqua;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    
+    h2::after {
+        content: "TOP";
+        background-color: #ffe70e;
+        color: black;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 600;
+        display: inline-block;
+        padding: 5px 10px;
+        position: absolute;
+        top: -10px;
+        right: -25px;
+        z-index: inherit;
+        shape-rendering: inherit;
+    }
+    
+    h3 {
+        color: aqua;
+        font-size: 20px;
+        margin: 20px 40px;
+    }
+    
+    h4 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    nav a:link {
+        list-style: none;
+        /* display: block; */
+        margin-right: 30px;
+        display: inline-block;
+    }
+    
+    nav a:link:last-child {
+        margin-right: 0;
+    }
+    
+    .post-image {
+        width: 100%;
+        height: auto;
+    }
+    
+    .user-img {
+        height: 50px;
+        width: 50px;
+    }
+    
+    button {
+        font-size: 22px;
+        padding: 20px;
+        cursor: pointer;
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+        border-radius: 40%;
+        z-index: inherit;
+    }
+    
+    button:hover {
+        background-color: red;
+        font-weight: bold;
+    }
+    
+    footer {
+        margin-bottom: 25px;
+    }
+    
+    .related {
+        list-style: none;
+        margin: 0;
+    }
+    /*FLOATS LAYOUTS*/
+    /* 
+.user-img {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.author {
+    margin-left: 20px;
+    float: left;
+    margin-top: 10px;
+}
+
+h1 {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.clearfix::after {
+    clear: both;
+    content: " ";
+    display: block;
+}
+
+article {
+    
+
+width: 825px;
+float: left;
+
+}
+aside {
+    
+
+width: 300px;
+float: right;
+
+}
+footer {
+  
+
+clear: both;
+
+}
+*/
+    /* li:first-child {
+        font-weight: 600;
+}
+li:last-child {
+font-weight: 600;
+
+
+}
+li:nth-child(odd) {
+you can as well use odd as input in the nth-child property you can also use the even,
+you can as well use numbers such as 1-9 to get the element you wan to design color: red;
+}
+*/
+    /*this is how to sytle your links
+
+/*FLEXBOX*/
+    
+    .main-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .author-box {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    
+    .author {
+        margin-bottom: 0;
+        margin-left: 15px;
+    }
+    
+    .related-post {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .related-link:link {
+        font-size: 17px;
+        font-weight: 600;
+        font-style: normal;
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .related-author {
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: italic;
+    }
+    
+    .row {
+        display: flex;
+        gap: 75px;
+        margin-bottom: 60px;
+        align-items: flex-start;
+    }
+    
+    article {
+        flex: 1;
+        margin-bottom: 0;
+    }
+    
+    aside {
+        flex: 0 0 300px;
+    }
